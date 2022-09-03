@@ -40,7 +40,7 @@ function Post() {
             </div>
             <div className="rightSide">
                 <div className="addCommentContainer">
-                    <input type="text" placeholder="Comment...." onChange={(e) => (setNewComment(e.target.value))} />
+                    <input type="text" value={newComment} placeholder="Comment...." onChange={(e) => (setNewComment(e.target.value))} />
                     <button onClick={addComment}>Add Comment</button>
                 </div>
                 <div className="listOfComments">
